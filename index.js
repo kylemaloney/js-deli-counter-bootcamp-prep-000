@@ -19,7 +19,8 @@ function currentLine (line){
     for (var i = 0; i < line.length-1; i++){
         string += (i+1) + ". " + line[i] + ", ";
     } 
-    string += (line.length) + ". " + line[line.length];
+    var last = line.length
+    string += (line.length) + ". " + line[last];
     return string;
   } else {
     return ("The line is currently empty.");
